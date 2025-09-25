@@ -69,7 +69,11 @@ app.get("/",(req,res)=>{
 })
 
 async function main(){
-    await mongoose.connect(process.env.MONGO_URL);
+    await mongoose.connect(process.env.MONGO_URL,{
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        serverSelectionTimeoutMS: 10000, 
+    });
 };
 
 
