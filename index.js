@@ -65,7 +65,7 @@ main()
 
 
 app.get("/",(req,res)=>{
-    res.send("Root working");
+    res.redirect("/chats");
 })
 
 async function main(){
