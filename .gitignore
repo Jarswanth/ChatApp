@@ -1,0 +1,13 @@
+# Node.js
+node_modules/
+
+# Environment variables
+.env
+
+# OS-specific
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
